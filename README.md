@@ -29,29 +29,30 @@ This project was created to showcase how fashion recommendation systems work usi
    ```bash
    git clone https://github.com/RithvikManda/FashionSense.git
    cd FashionSense
-2.Install dependencies: You can install the necessary Python packages using pip. Ensure you have a virtual environment activated, or use pip directly.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RithvikManda/FashionSense.git
+   cd FashionSense
+2. You can install the neccesary python packages usin pip. Ensure you have a virtual environment activated:
+   ```bash
+   pip install -r requirements.txt
+3. Extract your dataset (if not already extracted): If you're working with a compressed dataset, extract the images into the specified folder (/content/women_fashion in your case). You can use the following command:
 
    ```bash
+   python
    Copy code
-   pip install -r requirements.txt
+   from zipfile import ZipFile
+   import os
 
-3.Extract your dataset (if not already extracted): If you're working with a compressed dataset, extract the images into the specified folder (/content/women_fashion in your case). You can use the following command:
+   zip_file_path = 'path_to_your_dataset.zip'
+   extraction_path = 'path_to_extracted_images'
 
-'''bash python
-Copy code
-from zipfile import ZipFile
-import os
-
-zip_file_path = 'path_to_your_dataset.zip'
-extraction_path = 'path_to_extracted_images'
-
-with ZipFile(zip_file_path, 'r') as zip_ref:
-    zip_ref.extractall(extraction_path)
-4.Run the system: Once the environment is set up, run the script to train and evaluate the recommendation model.
-
-```bash
-
-python recommendation_system.py
+   with ZipFile(zip_file_path, 'r') as zip_ref:
+      zip_ref.extractall(extraction_path)
+4. Run the system: Once the environment is set up, run the script to train and evaluate the recommendation model.
+   ```bash
+   python recommendation_system.py
+    
 
 ### Usage
 ### Fashion Item Recommendation
@@ -64,6 +65,7 @@ Example
 Given an input image, the system will show the original image along with a set of recommended images from the dataset.
 
 ### Evaluation Metrics
+<br/>
 The model's performance is evaluated using the following metrics:
 
 Precision: How many of the recommended items were relevant.
@@ -74,6 +76,7 @@ Average Precision: 0.84
 Average Recall: 0.7
 F1-Score: 0.875
 
+<br/>
 ## Acknowledgements
 VGG16 model for feature extraction
 ImgAug library for data augmentation
