@@ -1,0 +1,10 @@
+tensorflow==2.11.0
+opencv-python==4.6.0.66
+imgaug==0.4.0
+scikit-learn==1.1.2
+scipy==1.9.3
+matplotlib==3.6.2
+Pillow==9.3.0
+cvzone==1.5.2
+numpy==1.23.5
+glob2==0.7
