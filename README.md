@@ -31,14 +31,13 @@ This project was created to showcase how fashion recommendation systems work usi
    cd FashionSense
 2.Install dependencies: You can install the necessary Python packages using pip. Ensure you have a virtual environment activated, or use pip directly.
 
-bash
-Copy code
-pip install -r requirements.txt
-
+   ```bash
+   Copy code
+   pip install -r requirements.txt
 
 3.Extract your dataset (if not already extracted): If you're working with a compressed dataset, extract the images into the specified folder (/content/women_fashion in your case). You can use the following command:
 
-python
+'''bash python
 Copy code
 from zipfile import ZipFile
 import os
@@ -50,8 +49,8 @@ with ZipFile(zip_file_path, 'r') as zip_ref:
     zip_ref.extractall(extraction_path)
 4.Run the system: Once the environment is set up, run the script to train and evaluate the recommendation model.
 
-bash
-Copy code
+```bash
+
 python recommendation_system.py
 
 ### Usage
