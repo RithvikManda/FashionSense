@@ -1,4 +1,4 @@
-# FashionSense: Fashion Recommendation System
+# TrendSense : AI-Based Fashion Style Recommendation
 
 ## Overview
 FashionSense is a deep learning-based fashion recommendation system designed to recommend similar clothing items based on images. The system uses computer vision and pre-trained models like VGG16 to extract features from clothing images and recommends the most similar items from a collection.
